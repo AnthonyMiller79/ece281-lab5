@@ -1,7 +1,7 @@
 --------------------------------------------------------------------
 -- Name:	Chris Coulston
 -- Date:	Jan 10, 2015
--- File:	lec04.vhdl
+-- File:	counter.vhdl
 -- HW:	Lecture 4
 --	Crs:	ECE 383
 --
@@ -21,14 +21,14 @@ use IEEE.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
 
 
-entity lec10 is
+entity counter is
 	generic (N: integer := 4);
 	Port(	clk: in  STD_LOGIC;
 			reset : in  STD_LOGIC;
 			crtl: in std_logic_vector(1 downto 0);
 			D: in unsigned (N-1 downto 0);
 			Q: out unsigned (N-1 downto 0));
-end lec10;
+end counter;
 
 architecture behavior of lec10 is
 	
