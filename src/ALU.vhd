@@ -133,5 +133,5 @@ w_carry<= w_add_cout when i_op = "000" else
  or (i_A(7) AND NOT i_B(7) AND NOT w_result(7))
  when i_op = "001" else
  '0';
-o_flags <= w_negative & w_overflow & w_zero & w_carry;
+o_flags <= w_negative &  w_zero& w_carry & w_overflow ;
 end Behavioral;
