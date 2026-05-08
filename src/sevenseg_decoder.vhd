@@ -58,7 +58,7 @@ begin
                 "0011111" when x"B",
                 "0001101" when x"C",
                 "0111101" when x"D",
-                "0000000" when x"E",
+                "1001111" when x"E",
                 "0000001" when x"F",
                 "0000000" when others;
         
